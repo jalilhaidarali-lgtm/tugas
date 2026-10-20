@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Kolen Cave</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="TUGAS.css">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="#">Kolen Cave</a>
+      <img src="cave.png" alt="Logo Kolen Cave" width="100" height="100" class="d-inline-block align-text-top rounded-circle">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#tentang">Tentang</a>
+        <a class="nav-link" href="#produk">Produk</a>
+        <a class="nav-link" href="#keunggulan">Keunggulan</a>
+        <a class="nav-link" href="#kontak">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+<div id="home" class="hero-section text-center text-danger py-5 mt-5">
+    <h1>Kolen Cave</h1>
+    <p>Tempat kerja tenang untuk mahasiswa dan freelancer.</p>
+    <a href="#produk" class="btn btn-warning">Pesan Sekarang</a>
+  </div>
+
+  <div id="tentang" class="container text-center py-4">
+    <h3 class="text-danger">Tentang Kami</h3>
+    <p>Kolen Cave adalah tempat kerja dan ngopi yang nyaman untuk mahasiswa, pelajar, dan pengerjaan tugas.</p>
+  </div>
+
+  <div id="produk" class="container py-4">
+    <h3 class="text-center mb-3">Produk Kami</h3>
+    
+    <div class="row mb-3">
+      <div class="col-md-6 mx-auto">
+        <input type="text" id="search" class="form-control" placeholder="Cari menu kopi atau makanan...">
+      </div>
+    </div>
+    
+    <p id="status" class="text-center text-muted"></p>
+
+    <div id="products" class="row"></div>
+  </div>
+
+  <div class="container py-4">
+    <div class="card p-4 mx-auto" style="max-width: 600px;">
+      <h4 class="mb-3">Keranjang Pesanan</h4>
+      <ul id="cartItems" class="list-group mb-3">
+        <li class="list-group-item text-muted">Keranjang masih kosong</li>
+      </ul>
+      <h5>Total: <span id="total">Rp 0</span></h5>
+      <button id="checkout" class="btn btn-success mt-2" disabled>Buat Pesanan</button>
+      <p id="message" class="text-success mt-2 mb-0 font-weight-bold"></p>
+    </div>
+  </div>
+
+  <div id="keunggulan" class="container text-center py-4">
+    <h3>Keunggulan</h3>
+    <p>Wi-Fi Cepat | Banyak Colokan | Suasana Tenang</p>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Kolen Cave</p>
+  </footer>
+
+  <script src="tugas.js"></script>
+</body>
+</html>

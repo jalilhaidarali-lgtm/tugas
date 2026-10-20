@@ -1,0 +1,34 @@
+html { 
+  scroll-behavior: smooth; 
+}
+
+.hero-section {
+  background: #212529;
+  padding: 80px 20px !important;
+}
+
+#produk .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#produk .card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+#produk .card img { 
+  object-fit: contain; 
+}
+
+#kontak form,
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
