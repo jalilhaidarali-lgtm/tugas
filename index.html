@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Penjualan | Kolen Cave</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="TUGAS.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark topbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#dashboard">☕ Kolen Cave</a>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#dashboard">Dashboard</a>
+        <a class="nav-link" href="#produk">Produk Terlaris</a>
+        <a class="nav-link" href="#tentang">Tentang Proyek</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4" id="dashboard">
+    <section class="page-heading d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <div>
+        <p class="eyebrow mb-1">RINGKASAN USAHA</p>
+        <h1 class="h2 mb-1">Dashboard Analitik Penjualan</h1>
+        <p class="text-secondary mb-0">Pantau penjualan Kolen Cave dengan lebih mudah.</p>
+      </div>
+      <label class="period-control">Periode laporan
+        <select id="period" class="form-select mt-1" aria-label="Pilih periode laporan">
+          <option value="7">7 hari terakhir</option>
+          <option value="30" selected>30 hari terakhir</option>
+          <option value="90">90 hari terakhir</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="sample-note mt-4">ℹ️ Data pada dashboard ini adalah <strong>data contoh/fiktif</strong> untuk keperluan prototipe tugas.</div>
+
+    <section class="row g-3 mt-1" aria-label="Ringkasan penjualan">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <article class="summary-card">
+          <p>Total Pendapatan</p>
+          <h2 id="revenue">Rp 0</h2>
+          <span>Jumlah pendapatan pada periode ini</span>
+        </article>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <article class="summary-card">
+          <p>Jumlah Transaksi</p>
+          <h2 id="transactions">0</h2>
+          <span>Pesanan yang tercatat</span>
+        </article>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <article class="summary-card">
+          <p>Produk Terlaris</p>
+          <h2 id="favorite">-</h2>
+          <span>Produk dengan jumlah penjualan tertinggi</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel mt-4" aria-labelledby="chart-title">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+        <div>
+          <h2 id="chart-title" class="h5 mb-1">Tren Pendapatan</h2>
+          <p class="text-secondary small mb-0">Perbandingan pendapatan dalam periode yang dipilih</p>
+        </div>
+        <span class="chart-label">Pendapatan (rupiah)</span>
+      </div>
+      <div id="salesChart" class="chart mt-4" role="img" aria-label="Grafik batang pendapatan"></div>
+    </section>
+
+    <section class="panel mt-4" id="produk">
+      <div class="mb-3">
+        <h2 class="h5 mb-1">Produk Terlaris</h2>
+        <p class="text-secondary small mb-0">Contoh jumlah produk yang terjual pada periode ini.</p>
+      </div>
+      <div class="table-responsive">
+        <table class="table align-middle mb-0">
+          <thead><tr><th>Produk</th><th>Terjual</th><th>Harga</th></tr></thead>
+          <tbody id="productRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel mt-4" id="tentang">
+      <h2 class="h5 mb-3">Tentang Proyek</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><div class="info-box"><h3>Masalah bisnis</h3><p>Pemilik usaha kecil sering kesulitan mengetahui pendapatan, tren penjualan, dan produk terlaris ketika catatan penjualan masih tersebar atau manual.</p></div></div>
+        <div class="col-md-6"><div class="info-box"><h3>Target pasar</h3><p>Pemilik kedai kopi, toko kecil, dan usaha rumahan yang ingin melihat ringkasan penjualan dengan cepat dan mudah.</p></div></div>
+        <div class="col-md-6"><div class="info-box"><h3>Model bisnis</h3><p>Rencana: fitur dasar dapat digunakan gratis. Fitur laporan yang lebih lengkap dapat ditawarkan melalui langganan. Prototipe ini tidak mengelola uang atau pembayaran.</p></div></div>
+        <div class="col-md-6"><div class="info-box"><h3>Pemasaran digital</h3><p>Promosi melalui media sosial dengan tips membaca penjualan, konten produk terlaris, dan kata kunci seperti “dashboard penjualan usaha kecil”.</p></div></div>
+        <div class="col-12"><div class="info-box"><h3>Rencana validasi pengguna</h3><p>Minta 3–5 pemilik usaha atau teman mencoba dashboard. Tanyakan apakah mereka memahami pendapatan, menemukan produk terlaris, dan bisa mengganti periode laporan. Gunakan masukan mereka untuk memperbaiki tampilan.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 mt-4">Kolen Cave · Prototipe analitik penjualan dengan data contoh</footer>
+  <script src="tugas.js"></script>
+</body>
+</html>
