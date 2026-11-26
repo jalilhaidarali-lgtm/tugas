@@ -1,34 +1,145 @@
-html { 
-  scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
-.hero-section {
-  background: #212529;
-  padding: 80px 20px !important;
+body {
+  background: #f5f7fb;
+  color: #202b3c;
+  font-family: Arial, sans-serif;
 }
 
-#produk .card {
-  border: none;
+.topbar {
+  background: #173b35;
+}
+
+.topbar .nav-link {
+  color: #e7f1ed;
+}
+
+.page-heading {
+  padding-top: 12px;
+}
+
+.eyebrow {
+  color: #388477;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.period-control {
+  min-width: 190px;
+  color: #596579;
+  font-size: 0.85rem;
+}
+
+.sample-note {
+  padding: 12px 16px;
+  background: #fff8df;
+  border: 1px solid #f1e4b7;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  color: #685923;
+  font-size: 0.9rem;
 }
 
-#produk .card:hover { 
-  transform: translateY(-5px); 
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+.summary-card,
+.panel {
+  height: 100%;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e8ebf0;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(27, 45, 70, 0.04);
 }
 
-#produk .card img { 
-  object-fit: contain; 
+.summary-card p {
+  margin-bottom: 10px;
+  color: #657187;
 }
 
-#kontak form,
-.card {
-  background: #ffffff;
-  border-radius: 8px;
+.summary-card h2 {
+  margin-bottom: 8px;
+  color: #173b35;
+  font-size: 1.65rem;
 }
 
-.btn {
-  transition: all 0.2s ease-in-out;
+.summary-card span,
+.chart-label {
+  color: #7a8494;
+  font-size: 0.82rem;
+}
+
+.chart {
+  display: flex;
+  height: 220px;
+  align-items: end;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 15px 8px 0;
+  border-bottom: 1px solid #e4e8ee;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 53px, #eef1f5 54px, transparent 55px);
+}
+
+.chart-item {
+  display: flex;
+  width: 12%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 7px;
+  color: #7a8494;
+  font-size: 0.75rem;
+}
+
+.chart-bar {
+  width: 100%;
+  max-width: 52px;
+  min-height: 5px;
+  background: #55a895;
+  border-radius: 7px 7px 0 0;
+}
+
+.table thead th {
+  color: #758095;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.info-box {
+  height: 100%;
+  padding: 16px;
+  background: #f7f9fb;
+  border-radius: 10px;
+}
+
+.info-box h3 {
+  color: #267466;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info-box p {
+  margin-bottom: 0;
+  color: #596579;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+footer {
+  color: #788294;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 576px) {
+  .summary-card,
+  .panel {
+    padding: 16px;
+  }
+  .chart {
+    gap: 5px;
+  }
+  .chart-item {
+    font-size: 0.65rem;
+  }
 }
